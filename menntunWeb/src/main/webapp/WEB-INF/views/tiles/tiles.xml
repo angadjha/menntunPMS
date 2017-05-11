@@ -15,20 +15,25 @@
  
     <!--Default Base Definition -->
     <definition name="default-base-definition" 
-       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       template="/WEB-INF/views/tiles/layouts/defaultBlankLayout.jsp">  
        <put-attribute name="title" value="Menntun Project System" />  
-       <put-attribute name="header" value="" />  
-       <put-attribute name="menu" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/pages/blank.jsp" />   
        <put-attribute name="body" value="" />  
-       <put-attribute name="footer" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/pages/blank.jsp" />  
    </definition>  
  
  
    <!-- Welcome Page -->
-   <definition name="welcome" extends="base-definition">  
+   <definition name="welcome" extends="default-base-definition">  
        <put-attribute name="title" value="Welcome" />  
        <put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />  
    </definition>
+ 
+    <!-- Dashboard Page -->
+   <definition name="dashboard" extends="base-definition">  
+       <put-attribute name="title" value="dashboard" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/dashboard.jsp" />  
+   </definition> 
  
    <!-- Home Page -->
    <definition name="home" extends="base-definition">  

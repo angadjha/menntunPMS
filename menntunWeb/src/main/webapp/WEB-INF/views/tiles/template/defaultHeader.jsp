@@ -15,17 +15,30 @@
           </a>
 		   <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
+              
+              <!-- Control Sidebar Toggle Button -->
+               <li>
+                <a href="${pageContext.request.contextPath}/logout" data-toggle="control-sidebar">PMS</a>
+              </li>
+              <li>
+                <a href="${pageContext.request.contextPath}/logout" data-toggle="control-sidebar">HRMS</a>
+              </li>
+               <li>
+                <a href="${pageContext.request.contextPath}/logout" data-toggle="control-sidebar">Account</a>
+              </li>
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="<c:url value='/static/dist/img/user2-160x160.jpg'/>" class="user-image" alt="User Image">
                   <span class="hidden-xs">Angad Jha</span>
                 </a>
+                <!-- <ul>
+                <li>Sign out</li>
+                </ul> -->
               </li>
-              <!-- Control Sidebar Toggle Button -->
-              <li>
-                <a href="#" data-toggle="control-sidebar">Sign out </a>
-              </li>
+              <%-- <li>
+                <a href="${pageContext.request.contextPath}/logout" data-toggle="control-sidebar"> </a>
+              </li> --%>
             </ul>
           </div>
          

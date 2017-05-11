@@ -13,6 +13,11 @@
    <artifactId>common</artifactId>
    <version>${project.version}</version>
   </dependency>
+  <dependency>
+   <groupId>com.menntun.application</groupId>
+   <artifactId>customer</artifactId>
+   <version>${project.version}</version>
+  </dependency>
   </dependencies>
   
 </project>
