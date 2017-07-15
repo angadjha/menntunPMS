@@ -52,17 +52,7 @@
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
         </dependency>
-        <!-- jsr303 validation dependencies-->
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>${javax.validation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate.validator.version}</version>
-        </dependency>
+        
         <!-- Joda-Time -->		
 		<dependency>
   			<groupId>joda-time</groupId>
@@ -85,12 +75,12 @@
   
   
   <modules>
-  	<module>menntunWeb</module>
-  	<module>daoDatabase</module>
-  	<module>common</module>
-  	<module>customer</module>
+    <module>common</module>
+    <module>customer</module>
+    <module>daoDatabase</module>
   	<module>tenderService</module>
   	<module>cacheService</module>
+  	<module>menntunWeb</module>
   </modules>
   
   <build>

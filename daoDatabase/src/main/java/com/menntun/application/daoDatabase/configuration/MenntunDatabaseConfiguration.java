@@ -30,7 +30,7 @@ public class MenntunDatabaseConfiguration {
 	public LocalSessionFactoryBean sessionFactory(){
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
-		sessionFactory.setPackagesToScan(new String[]{"com.menntun.application.customer.model"});
+		sessionFactory.setPackagesToScan(new String[]{"com.menntun.application.customer.model","com.menntun.application.common.model"});
 		sessionFactory.setHibernateProperties(hibernateProperties());
 		return sessionFactory;
 	}
@@ -42,7 +42,7 @@ public class MenntunDatabaseConfiguration {
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		dataSource.setUrl("jdbc:mysql://localhost:3306/menntunPMS");
 		dataSource.setUsername("root");
-		dataSource.setPassword("trumin!");
+		dataSource.setPassword("root");
 		return dataSource;
 	}
 	
@@ -52,7 +52,7 @@ public class MenntunDatabaseConfiguration {
 	        properties.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 	        properties.put("hibernate.show_sql", "true");
 	        properties.put("hibernate.format_sql", "true");
-	        properties.put("hibernate.hbm2ddl.auto", "create");
+	        properties.put("hibernate.hbm2ddl.auto", "update");
 	        properties.put("jadira.usertype.autoRegisterUserTypes", "true");
 	        return properties;   
 	}

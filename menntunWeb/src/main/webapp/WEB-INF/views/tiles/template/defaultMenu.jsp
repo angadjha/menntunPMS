@@ -31,23 +31,23 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                            <li><a href="${pageContext.request.contextPath}/products" title="Prepare Material Requirement"><i class=" "></i>Prepare Material Requirement</a></li>
-                            <li><a href="${pageContext.request.contextPath}/products" title="Request for Quote"><i class=" "></i>Request for Quote</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Vendor Quote"><i class=" "></i>Vendor Quote</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Finalize Quote"><i class=" "></i>Finalize Quote</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Vendor PO"><i class=" "></i>Vendor PO</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Manufacturing clearance"><i class=" "></i>Manufacturing clearance</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Inspection Call"><i class=" "></i>Inspection Call</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Inspection Raise To Department"><i class=" "></i>Inspection Raise To Department</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Inspection Approval"><i class=" "></i>Inspection Approval</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="DI Request To Department"><i class=" "></i>DI Request To Department</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="DI To Vendor"><i class=" "></i>DI To Vendor</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Supplier"><i class=" "></i>Supplier</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Supplier Material"><i class=" "></i>Supplier Material</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Update Supplier Material"><i class=" "></i>Update Supplier Material</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="DI To Department"><i class=" "></i>DI To Department</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Direct Material DI"><i class=" "></i>Direct Material DI</a></li>
-                           <li><a href="${pageContext.request.contextPath}/products" title="Final Inspection"><i class=" "></i>Final Inspection</a></li>
+                            <li><a href="${pageContext.request.contextPath}/pmr" title="Prepare Material Requirement"><i class=" "></i>Prepare Material Requirement</a></li>
+                            <li><a href="${pageContext.request.contextPath}/rfq" title="Request for Quote"><i class=" "></i>Request for Quote</a></li>
+                           <li><a href="${pageContext.request.contextPath}/vq" title="Vendor Quote"><i class=" "></i>Vendor Quote</a></li>
+                           <li><a href="${pageContext.request.contextPath}/fq" title="Finalize Quote"><i class=" "></i>Finalize Quote</a></li>
+                           <li><a href="${pageContext.request.contextPath}/vp" title="Vendor PO"><i class=" "></i>Vendor PO</a></li>
+                           <li><a href="${pageContext.request.contextPath}/mc" title="Manufacturing clearance"><i class=" "></i>Manufacturing clearance</a></li>
+                           <li><a href="${pageContext.request.contextPath}/ic" title="Inspection Call"><i class=" "></i>Inspection Call</a></li>
+                           <li><a href="${pageContext.request.contextPath}/irtd" title="Inspection Raise To Department"><i class=" "></i>Inspection Raise To Department</a></li>
+                           <li><a href="${pageContext.request.contextPath}/ia" title="Inspection Approval"><i class=" "></i>Inspection Approval</a></li>
+                           <li><a href="${pageContext.request.contextPath}/drtd" title="DI Request To Department"><i class=" "></i>DI Request To Department</a></li>
+                           <li><a href="${pageContext.request.contextPath}/dtv" title="DI To Vendor"><i class=" "></i>DI To Vendor</a></li>
+                           <li><a href="${pageContext.request.contextPath}/s" title="Supplier"><i class=" "></i>Supplier</a></li>
+                           <li><a href="${pageContext.request.contextPath}/sm" title="Supplier Material"><i class=" "></i>Supplier Material</a></li>
+                           <li><a href="${pageContext.request.contextPath}/usm" title="Update Supplier Material"><i class=" "></i>Update Supplier Material</a></li>
+                           <li><a href="${pageContext.request.contextPath}/dtd" title="DI To Department"><i class=" "></i>DI To Department</a></li>
+                           <li><a href="${pageContext.request.contextPath}/dmd" title="Direct Material DI"><i class=" "></i>Direct Material DI</a></li>
+                           <li><a href="${pageContext.request.contextPath}/fi" title="Final Inspection"><i class=" "></i>Final Inspection</a></li>
               </ul>
             </li>
             
@@ -79,7 +79,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-               <li><a href="${pageContext.request.contextPath}/products" title="Create Project"><i class=" "></i>Create Project</a></li>
+               <li><a href="${pageContext.request.contextPath}/createProject" title="Create Project"><i class=" "></i>Create Project</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Create Town/Block/Division"><i class=" "></i>Create Town/Block/Division</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Create Cluster"><i class=" "></i>Create Cluster</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Create Village/Substation"><i class=" "></i>Create Village/Substation</a></li>
@@ -147,7 +147,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-               <li><a href="${pageContext.request.contextPath}/home" title="Customer KYC"><i class=" "></i>Customer KYC</a></li>
+               <li><a href="${pageContext.request.contextPath}/customerKYC" title="Customer KYC"><i class=" "></i>Customer KYC</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Tender Category"><i class=" "></i>Tender Category</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Material Master"><i class=" "></i>Material Master</a></li>
                            <li><a href="${pageContext.request.contextPath}/products" title="Material type Master"><i class=" "></i>Material type Master</a></li>

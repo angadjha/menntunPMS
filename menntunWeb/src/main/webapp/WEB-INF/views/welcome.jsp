@@ -4,7 +4,7 @@
       </div><!-- /.login-logo -->
       <div class="login-box-body" style="border: 1px solid; background: none repeat scroll 0% 0% DarkSlateGrey;">
         <p class="login-box-msg"><b style="color: white; font-weight: 1px;">Project Management System</b></p>
-        <form action="${pageContext.request.contextPath}/dashboard" method="post">
+        <form action="${pageContext.request.contextPath}/welcome_home" method="GET">
           <div class="form-group has-feedback">
             <input type="email" class="form-control" placeholder="angad.jha@menntunsystems.com">
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

@@ -20,8 +20,36 @@
        <put-attribute name="header" value="/WEB-INF/views/pages/blank.jsp" />   
        <put-attribute name="body" value="" />  
        <put-attribute name="footer" value="/WEB-INF/views/pages/blank.jsp" />  
+   </definition> 
+   
+   
+    <!--Dashboard page Base Definition with out menu -->
+    <definition name="default-dashboard-base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayoutOne.jsp">  
+       <put-attribute name="title" value="Menntun Project System" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
    </definition>  
  
+ 
+   <!-- Welcome Home Page -->
+   <definition name="welcome_home" extends="default-dashboard-base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/mainPage.jsp" />  
+   </definition>
+   
+   <!-- HRMS Page -->
+   <definition name="hrms" extends="default-dashboard-base-definition">  
+       <put-attribute name="title" value="HRMS" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/hrms.jsp" />  
+   </definition>
+   
+   <!-- Account Page -->
+   <definition name="account" extends="default-dashboard-base-definition">  
+       <put-attribute name="title" value="Account" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/account.jsp" />  
+   </definition>
  
    <!-- Welcome Page -->
    <definition name="welcome" extends="default-base-definition">  
@@ -35,11 +63,20 @@
        <put-attribute name="body" value="/WEB-INF/views/pages/dashboard.jsp" />  
    </definition> 
  
-   <!-- Home Page -->
-   <definition name="home" extends="base-definition">  
+   <!-- Customer KYC Page -->
+   <definition name="customerKYC" extends="base-definition">  
        <put-attribute name="title" value="Welcome" />  
-       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/master/customerKYC.jsp" />  
    </definition>  
+   
+    <!-- Create Project Page -->
+   <definition name="createProject" extends="base-definition">  
+       <put-attribute name="title" value="Create Project" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/configureProjects/createProject.jsp" />  
+   </definition>  
+
+
+
 
    <!-- Product Page -->
    <definition name="products" extends="base-definition">  
@@ -47,10 +84,54 @@
        <put-attribute name="body" value="/WEB-INF/views/pages/products.jsp" />  
    </definition>  
       
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
    <!-- Contact-us Page -->
    <definition name="contactus" extends="base-definition">  
        <put-attribute name="title" value="Contact Us" />  
        <put-attribute name="body" value="/WEB-INF/views/pages/contactus.jsp" />  
-   </definition>  
+   </definition> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+   <!-- Procurement material Page -->
+   
+   <definition name="prepareRequirement" extends="base-definition">  
+       <put-attribute name="title" value="Procurement material Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/materialProcurement/prepareRequirement.jsp" />  
+   </definition>
+   
+   <definition name="requestForQuote" extends="base-definition">  
+       <put-attribute name="title" value="Procurement material Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/materialProcurement/requestForQuote.jsp" />  
+   </definition> 
+   
+   <definition name="vendorQuote" extends="base-definition">  
+       <put-attribute name="title" value="Procurement material Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/materialProcurement/vendorQuote.jsp" />  
+   </definition>   
  
 </tiles-definitions>
