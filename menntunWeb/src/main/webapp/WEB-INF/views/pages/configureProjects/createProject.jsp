@@ -17,8 +17,6 @@
                   <div class="box-body">
                   <div class="row">
                   <div class="col-md-6">
-<!--                     <div class="form-group">
-                      <label for="projectCode">Project Code</label> -->
                       <form:input type="hidden" class="form-control" id="projectCode" path="projectCode" placeholder="Enter Your Project Code"/>
                     <!-- </div> -->
                     <div class="form-group">

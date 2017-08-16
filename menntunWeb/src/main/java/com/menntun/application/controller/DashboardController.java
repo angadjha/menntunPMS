@@ -2,14 +2,16 @@ package com.menntun.application.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.menntun.application.common.model.Customer;
+import com.menntun.application.common.model.PrepareMaterialRequirement;
 import com.menntun.application.common.model.Project;
 import com.menntun.application.customer.service.CustomerService;
+import com.menntun.application.tenderService.service.MaterailService;
+import com.menntun.application.tenderService.service.PrepareMaterialRequirementService;
 import com.menntun.application.tenderService.service.ProjectService;
 
 @Controller
@@ -21,6 +23,12 @@ public class DashboardController {
 	
 	@Autowired
     private ProjectService projectService;	
+	
+	@Autowired
+	private MaterailService materialService;
+	
+	@Autowired
+	private PrepareMaterialRequirementService prepareMaterialRequirementService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String loginPage(ModelMap model) {
@@ -79,8 +87,11 @@ public class DashboardController {
 	}
 	
 	@RequestMapping(value = {"/pmr"})
-	public String prepareMaterialRequirement(){
-		
+	public String prepareMaterialRequirement(ModelMap model){
+	    model.addAttribute("prepareMaterialRequirement", new PrepareMaterialRequirement());
+        model.addAttribute("prepareMaterialRequirementList", prepareMaterialRequirementService.findAllPrepareMaterialRequirement());
+		model.addAttribute("projects", projectService.findAllProjects());
+		model.addAttribute("materials", materialService.findAllMaterials());
 		return "prepareRequirement";
 		
 	}
